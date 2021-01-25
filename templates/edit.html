@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+<title>Edit Post</title>
+{% endblock %}
+
+{% block body %} 
+<h1>EDIT POST</h1>
+
+
+    <hr>
+        <h2>Edit:</h2>
+            <form method="POST" action='/posts'>
+                Title: <input type="text" name="title" id="title">
+                <br>
+                Author: <input type="text" name="author" id="author">
+                <br>
+                Posts: <input type="text" name="content" id="content">
+                <br>
+                <input type="submit" value="Save">
+            </form>
+    <hr>
+{% endblock %}
